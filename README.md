@@ -1,7 +1,7 @@
 # pretrained_dog_classifier
 First Part of my nanodegree project implementing a pre-trained image classifier to identify dog breeds.
 
-Objectives
+Objectives:
 Correctly identify which pet images are of dogs (even if breed is misclassified) and which pet images aren't of dogs.
 Correctly classify the breed of dog, for the images that are of dogs.
 Determine which CNN model architecture (ResNet, AlexNet, or VGG16), "best" achieve the objectives 1 and 2.
