@@ -6,6 +6,7 @@
 # PROGRAMMER: Ajiroghene Sunday
 # DATE CREATED: 2021-03-22                                 
 # REVISED DATE: 2021-03-22
+
 # PURPOSE: Classifies pet images using a pretrained CNN model, compares these
 #          classifications to the true identity of the pets in the images, and
 #          summarizes how well the CNN performed on the image classification task. 
@@ -83,7 +84,6 @@ def main():
     classify_images(in_arg.dir, results, in_arg.arch)
 
     # Function that checks Results Dictionary using results    
-    
     check_classifying_images(results) 
 
     
@@ -126,12 +126,12 @@ def main():
     end_time = time()
     
     # TODO 0: Computes overall runtime in seconds & prints it in hh:mm:ss format
-    tot_time = start_time - end_time
-    print("\n** Total Elapsed Runtime:",
-          str(int((tot_time/3600)))+":"+str(int((tot_time%3600)/60))+":"
-          +str(int((tot_time%3600)%60)) )
     
-
+    tot_time = end_time - start_time
+    print("\n** Total Elapsed Runtime:", str( int( (tot_time / 3600) ) ) + ":" +
+          str( int(  ( (tot_time % 3600) / 60 )  ) ) + ":" + 
+          str( int(  ( (tot_time % 3600) % 60 ) ) ) )     
+         
 # Call to main function to run the program
 if __name__ == "__main__":
     main()
